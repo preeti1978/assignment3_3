@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	/*All elemnts on page made as Verdana font*/
+  *{
+
+		font-family: Verdana;
+	}
+
+  /* for the light blue border with rounded edge that surrounds each form element*/
+	table.blue-table {
+		position: relative;
+    border-radius:10px;
+  border: #solid 10px #000;
+    background: rgba(135,206,250,0.4);
+    margin-left: auto ;
+  margin-right: auto ;
+ margin: 0 auto;
+  width:500px;
+  padding: 10px;
+  }
+
+/*for contaning the table headings like "Step 1 : Card details" aligned just above the blue table. It is made transparent*/
+table.table-invisible {
+	position: relative;
+    border-radius:10px;
+  border: #solid 10px #000;
+  background: rgba(255,255,255,0.0);
+  margin-left: auto ;
+  margin-right: auto ;
+ margin: 0 auto;
+  width:500px;
+  padding: 10px;
+ }
+
+/*for text boxes in form*/
+ #textboxid
+{
+    height:30px;
+    font-size:14pt;
+    border-radius: 5px;
+    background: rgba(255,255,255,1.0);
+    opacity: 1.0;
+}
+
+/*for textarea in form*/
+#textareaID{
+	height:100px;
+	width: 300px;
+	border-radius: 5px;
+	background: rgba(255,255,255,1.0);
+    opacity: 1.0;	
+}
+
+/*for horizontal centre alignment*/
+#centreId{
+	text-align:center;
+}
+
+
+/*for the table headings like Step 1 */
+.thick-white-font{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-color:white;
+
+}
+
+
+
+/*main all encompassing div with background image with 100 percent height and width*/
+.div-with-blue-bg{
+	border:1px solid black; position: relative;  
+  margin-left: auto ;
+  margin-right: auto ;
+ margin: 0 auto;
+width:700px; height:1000px;background-image: url(BackGroundImage.jpg); background-size:100% 100%
+}
+
+#form-label{
+
+	font-weight: bold;
+}
+#img-credit-card{
+width:20px;
+height:20px;
+
+}
+
+#submitButtonClass{
+border-radius: 20px;
+color: white;
+font-weight: bold;
+background-color: #210b69;
+width: 100px;
+height: 40px;
+text-align: center;
+border:0;
+font-size: 15px;
+
+}
+
+/*The inter rwo seperation between two light blue tables*/
+hr{
+  size:1; visibility:hidden; margin-bottom:-2px; 
+}
+</style>
+</head>
+<body>
+<div  class="div-with-blue-bg">
+
+<table class="table-invisible"><tr><td class="thick-white-font">Step 1: Your details</td></tr></table>
+
+<table class="blue-table">
+<tr><td id="form-label">Name: </td><td id="centreId"><input id="textboxid"  style="opacity:1.0;background-color:white;" type="text" name="" placeholder="First and last name"  size="30"></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table"><tr><td id="form-label">Email: </td><td id="centreId"><input id="textboxid" type="text" name="" placeholder="example@domain.com" size="30" ></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table"><tr><td id="form-label">Phone: </td><td id="centreId"><input id="textboxid" type="text" name="" placeholder="+447500000000000" size="30" ></td></tr>
+</table>
+
+<table class="table-invisible"><tr><td class="thick-white-font">Step 1: Delivery address</td></tr></table>
+<table class="blue-table">
+<tr><td id="form-label">Address:</td><td id="centreId"><textarea id="textareaID" name=""   rows="8" cols="8"></textarea></td></tr>
+</table>
+
+<hr>
+<table class="blue-table">
+<tr><td id="form-label">Post code:</td><td id="centreId"><input id="textboxid" type="text" name="txtboxPostCode"  size="30" ></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table">
+<tr><td id="form-label">Country:</td><td id="centreId"><input id="textboxid" type="text" name="txtboxCountry"  size="30" ></td></tr>
+</table>
+
+
+<table class="table-invisible"><tr><td class="thick-white-font">Step 1: Card Details</td></tr></table>
+<table class="blue-table">
+<tr><td id="form-label" colspan="2">Card Type: <p style="text-align:center"><input type="radio"><img  id="img-credit-card" src="visa.jpg" >VISA&nbsp;&nbsp;<input type="radio"><img  id="img-credit-card" src="amex.jpg" >AmEx&nbsp;&nbsp;<input type="radio"><img src="masterCard.png" id="img-credit-card">Master Card</p></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table">
+<tr><td id="form-label">Card number: </td><td id="centreId"><input id="textboxid" type="text" name="txtboxCountry"  size="30" ></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table">
+<tr><td id="form-label">Security code: </td><td id="centreId"><input id="textboxid" type="text" name="txtboxCountry"  size="30" ></td></tr>
+</table>
+
+<hr>
+
+<table class="blue-table">
+<tr><td id="form-label">Name on card: </td><td id="centreId"><input id="textboxid" type="text" name="txtboxCountry"  size="30"  placeholder="exact name as on the card"></td></tr>
+</table>
+
+<P style="text-align:center;"><input type="submit" value="BUY IT!" id="submitButtonClass"></p>
+</div>
+
+
+
+</body>
+</html>
